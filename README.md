@@ -15,7 +15,11 @@ Tools • Dart 2.17.6 • DevTools 2.12.2
 v16.13.2
 ```
 
-## Tips
+## メモ
+- flutterではwebのビルドをするとデフォルトでbuild/webに出力されるので、`firebase.json`の`public`を`build/web`に変更しておく
+
+
+## command tips
 
 - デプロイ
 ```

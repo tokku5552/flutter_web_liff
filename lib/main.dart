@@ -1,4 +1,7 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_web_liff/liff.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _counter++;
     });
+  }
+
+  @override
+  initState() {
+    super.initState();
+    final obj = JsObject.jsify({'liffId': '1657422457-3aJQNgey'});
+    print(obj);
+    liffInit(obj);
   }
 
   @override

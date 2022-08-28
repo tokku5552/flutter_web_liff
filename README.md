@@ -24,5 +24,5 @@ v16.13.2
 - デプロイ
 ```
 flutter build web
-firebase init
+firebase deploy --only hosting
 ```
